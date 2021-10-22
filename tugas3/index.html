@@ -17,181 +17,186 @@
   <body>
     <h1 class="text-center">Tugas 3</h1>
     <p class="text-center">KALKULATOR</p>
-    <div class="container bg-light">
-      <!--start kolom hasil dan clear -->
-      <div class="row justify-content-center">
-        <div class="col-3">
-          <input
-            class="form-control"
-            type="text"
-            name="hasil"
-            id="hasil"
-            value=""
-            placeholder="Hasil"
-          />
-        </div>
-        <div class="col-1">
-          <input
-            class="btn btn-danger"
-            type="button"
-            value="C"
-            onclick="clearScreen()"
-            id="clear"
-          />
+    <!--start kolom hasil dan clear -->
+    <section>
+      <div class="contianer-fluid">
+        <div class="row g-5 justify-content-center bg-dark">
+          <div class="col-sm-3">
+            <input
+              class="form-control"
+              type="text"
+              name="hasil"
+              id="hasil"
+              value=""
+              placeholder="Hasil"
+              readonly
+            />
+          </div>
+          <div class="col-sm-1">
+            <input
+              class="btn btn-danger btn-lg"
+              type="button"
+              value="C"
+              onclick="clearScreen()"
+              id="clear"
+            />
+          </div>
         </div>
       </div>
-      <!--end kolom hasil dan clear -->
+    </section>
+    <!--end kolom hasil dan clear -->
 
+    <div class="container-fluid">
       <!--start kolom angka 1,2,3,+ -->
-      <div class="row justify-content-center">
+      <div class="row pt-1 justify-content-center g-5">
         <div class="col-1">
           <input
-            class="btn btn btn-secondary"
+            class="btn btn btn-secondary btn-lg"
             type="button"
             value="1"
-            onclick="liveScreen(1)"
+            onclick="layar(1)"
             id="satu"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="2"
-            onclick="liveScreen(2)"
+            onclick="layar(2)"
             id="dua"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="3"
             id="tiga"
-            onclick="liveScreen(3)"
+            onclick="layar(3)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-dark"
+            class="btn btn-dark btn-lg"
             type="button"
             value="+"
-            onclick="liveScreen('+')"
+            onclick="layar('+')"
           />
         </div>
       </div>
       <!--end kolom angka 1,2,3,+ -->
 
       <!--start kolom angka 4,5,6,- -->
-      <div class="row pt-3 justify-content-center">
+      <div class="row pt-1 justify-content-center g-5">
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="4"
             id="empat"
-            onclick="liveScreen(4)"
+            onclick="layar(4)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="5"
             id="lima"
-            onclick="liveScreen(5)"
+            onclick="layar(5)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="6"
             id="enam"
-            onclick="liveScreen(6)"
+            onclick="layar(6)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-dark"
+            class="btn btn-dark btn-lg"
             type="button"
             value="-"
-            onclick="liveScreen('-')"
+            onclick="layar('-')"
           />
         </div>
       </div>
       <!--end kolom angka 4,5,6,- -->
 
       <!--start kolom angka 7,8,9,x -->
-      <div class="row pt-3 justify-content-center">
+      <div class="row pt-1 justify-content-center g-5">
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="7"
             id="tujuh"
-            onclick="liveScreen(7)"
+            onclick="layar(7)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="8"
             id="delapan"
-            onclick="liveScreen(8)"
+            onclick="layar(8)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="9"
             id="sembilan"
-            onclick="liveScreen(9)"
+            onclick="layar(9)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-dark"
+            class="btn btn-dark btn-lg"
             type="button"
             value="x"
-            onclick="liveScreen('*')"
+            onclick="layar('*')"
           />
         </div>
       </div>
       <!--end kolom angka 7,8,9,x -->
 
       <!--start kolom angka /,o,.,= -->
-      <div class="row pt-3 justify-content-center">
+      <div class="row pt-1 justify-content-center g-5">
         <div class="col-1">
           <input
-            class="btn btn-dark"
+            class="btn btn-dark btn-lg"
             type="button"
             value="/"
-            onclick="liveScreen('/')"
+            onclick="layar('/')"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-secondary"
+            class="btn btn-secondary btn-lg"
             type="button"
             value="0"
             id="nol"
-            onclick="liveScreen(0)"
+            onclick="layar(0)"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-dark"
+            class="btn btn-dark btn-lg"
             type="button"
             value="."
-            onclick="liveScreen('.')"
+            onclick="layar('.')"
           />
         </div>
         <div class="col-1">
           <input
-            class="btn btn-primary"
+            class="btn btn-primary btn-lg"
             type="button"
             value="="
             onclick="hasil.value = eval(hasil.value)"
@@ -199,6 +204,7 @@
         </div>
       </div>
     </div>
+
     <!--end kolom angka /,o,.,= -->
 
     <!-- start script JS -->
@@ -208,7 +214,7 @@
         document.getElementById("hasil").value = "";
       }
       // Fungsi menambilkan hasil ke layar
-      function liveScreen(value) {
+      function layar(value) {
         let res = document.getElementById("hasil");
         if (res.value == "undefined") {
           res.value = "";
