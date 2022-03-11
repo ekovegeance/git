@@ -1,3 +1,7 @@
+
+
+![](roadmap.png)
+
 ## CYBER SECUIRTY ROADMAP : Step by step Process
 
 1. Keterampilan Komputer Dasar - Keterampilan komputer mengacu pada pengetahuan dan kemampuan yang diperlukan untuk mengoperasikan komputer dan teknologi terkait.
